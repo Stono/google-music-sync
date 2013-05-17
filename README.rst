@@ -9,6 +9,7 @@ To run it, you'll need the pre-reqs:
 -  pip install eyeD3
   
 Then glone the repo:
+
 -  git clone https://github.com/Stono/GoogleMusicSync.git
 
 And finally make it executable 
