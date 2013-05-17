@@ -1,6 +1,5 @@
-GoogleMusicSync: A simple Python script to sync your local MP3 library to Google Play Music
+GoogleMusicSync: 
 ==================================================
-
 A simple Python script to sync your local MP3 library to Google Play Music.
 Uses the excellent Google Music API script by Simon Weber and eyeD3 for MP3 tag reading.
 
