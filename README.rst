@@ -8,6 +8,12 @@ To run it, you'll need the pre-reqs:
 -  pip install git+git://github.com/simon-weber/Unofficial-Google-Music-API.git@develop
 -  pip install eyeD3
   
+Then glone the repo:
+-  git clone https://github.com/Stono/GoogleMusicSync.git
+
+And finally make it executable 
+-  sudo chmod 0755 googlemusicsync.py
+
 The script accepts two parameters:
 ./googlemusicsync -p LOCAL_PATH -s 'true/false'
 
