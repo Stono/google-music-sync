@@ -12,7 +12,8 @@ Then glone the repo:
 
 -  git clone https://github.com/Stono/GoogleMusicSync.git
 
-And finally make it executable 
+And finally make it executable:
+
 -  sudo chmod 0755 googlemusicsync.py
 
 The script accepts two parameters:
