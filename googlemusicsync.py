@@ -89,6 +89,9 @@ class LocalTrackCollection(TrackCollection):
                 if self._is_valid_file_name(name):
                     fullpath = os.path.join(path, name)
                     local_track = eyed3.load(fullpath)
+                    if local_track.tag is None:
+                        local_track.tag = eyed3.id3.Tag()
+                        local_track.tag.file_info = eyed3.id3.FileInfo(fullpath)
                     self.add_track(local_track.tag.track_num, local_track.tag.title, local_track.tag.album, local_track.tag.artist, fullpath)
         print("Loaded {0} tracks from Local Library".format(len(self.tracks)))
     
@@ -105,7 +108,7 @@ class GoogleTrackCollection(TrackCollection):
             gc.Authenticate()
         self._gc = gc
 
-    # Loads the local tracks from the file system
+    # Loads the tracks from GoogleMusic
     def load_tracks(self):
         print("Loading GoogleMusic library...")
         for gm_track in self._gc.MusicManager.get_all_songs():
