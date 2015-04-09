@@ -1,4 +1,4 @@
-__Note__: This script is old, and I no longer use or support it.
+NOTE: This script is old, and I no longer use or support it.
 
 GoogleMusicSync: 
 ==================================================
