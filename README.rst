@@ -1,3 +1,5 @@
+__Note__: This script is old, and I no longer use or support it.
+
 GoogleMusicSync: 
 ==================================================
 A simple Python script to sync your local MP3 library to Google Play Music.
